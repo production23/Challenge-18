@@ -1,0 +1,906 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='201306-citibike-tripdata' inline='true' name='federated.00fo4sk0nu2dbt1glxuvk0lcrufd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='201306-citibike-tripdata' name='textscan.0v2rvkl1j8z5x80zyknf702p4iwj'>
+            <connection class='textscan' directory='C:/Users/Aram/Desktop/challenge 18/2013-citibike-tripdata' filename='201306-citibike-tripdata.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0v2rvkl1j8z5x80zyknf702p4iwj' name='201306-citibike-tripdata.csv' table='[201306-citibike-tripdata#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0v2rvkl1j8z5x80zyknf702p4iwj' name='201306-citibike-tripdata.csv' table='[201306-citibike-tripdata#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='integer' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tripduration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tripduration]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>tripduration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>starttime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[starttime]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>starttime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stoptime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[stoptime]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>stoptime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start station id]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>start station id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start station name]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>start station name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station latitude]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>start station latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station longitude]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>start station longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[end station id]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>end station id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end station name]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>end station name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station latitude]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>end station latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station longitude]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>end station longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth year]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>birth year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[201306-citibike-tripdata.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='201306-citibike-tripdata.csv' datatype='table' name='[__tableau_internal_object_id__].[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]' role='measure' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='integer' name='[birth year]' role='dimension' type='quantitative' />
+      <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+      <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Start Station Name' datatype='string' name='[start station name]' role='dimension' type='nominal' />
+      <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+      <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+      <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Aram/AppData/Local/Temp/TableauTemp/#TableauTemp_0ha1mnj1d85f3d10955aa1jz3vng.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/04/2024 06:15:53 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>tripduration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tripduration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tripduration</remote-alias>
+              <ordinal>0</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12910</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>starttime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[starttime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>starttime</remote-alias>
+              <ordinal>1</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>512921</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stoptime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[stoptime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stoptime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>545371</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[end station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>553</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>553</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station latitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>553</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station longitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>553</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>11</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32029</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>12</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birth year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[birth year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birth year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>201306-citibike-tripdata.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[hr:starttime:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>23</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='201306-citibike-tripdata.csv' id='201306-citibike-tripdata.csv_1B77668847024980A7CCF51E03B58DEE'>
+            <properties context=''>
+              <relation connection='textscan.0v2rvkl1j8z5x80zyknf702p4iwj' name='201306-citibike-tripdata.csv' table='[201306-citibike-tripdata#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='tripduration' ordinal='0' />
+                  <column datatype='datetime' name='starttime' ordinal='1' />
+                  <column datatype='datetime' name='stoptime' ordinal='2' />
+                  <column datatype='integer' name='start station id' ordinal='3' />
+                  <column datatype='string' name='start station name' ordinal='4' />
+                  <column datatype='real' name='start station latitude' ordinal='5' />
+                  <column datatype='real' name='start station longitude' ordinal='6' />
+                  <column datatype='integer' name='end station id' ordinal='7' />
+                  <column datatype='string' name='end station name' ordinal='8' />
+                  <column datatype='real' name='end station latitude' ordinal='9' />
+                  <column datatype='real' name='end station longitude' ordinal='10' />
+                  <column datatype='integer' name='bikeid' ordinal='11' />
+                  <column datatype='string' name='usertype' ordinal='12' />
+                  <column datatype='integer' name='birth year' ordinal='13' />
+                  <column datatype='integer' name='gender' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='201306-citibike-tripdata' name='federated.00fo4sk0nu2dbt1glxuvk0lcrufd' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00fo4sk0nu2dbt1glxuvk0lcrufd'>
+            <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stoptime]' derivation='Hour' name='[hr:stoptime:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+            <column caption='Starttime' datatype='datetime' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+            <column-instance column='[end station id]' derivation='Sum' name='[sum:end station id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station id]' derivation='Sum' name='[sum:start station id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[hr:stoptime:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[hr:starttime:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>([federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[sum:end station id:qk] + [federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[sum:start station id:qk])</rows>
+        <cols>([federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[hr:stoptime:qk] + [federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[hr:starttime:qk])</cols>
+      </table>
+      <simple-id uuid='{9024D89D-E61F-44C3-B1A4-EB3B506D9229}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[:Measure Names]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[cnt:start station name:qk]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[dy:starttime:ok]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[max:end station name:nk]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[none:end station name:nk]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[none:start station name:nk]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[none:usertype:nk]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[yr:starttime:ok]</field>
+            <field>[federated.00fo4sk0nu2dbt1glxuvk0lcrufd].[yr:stoptime:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6C74BC28-841A-4B08-BBF4-3D56C08D4E40}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO2d93dc133gP/e9NzPoIDpAggQ7zaIu07KlyLYUp6zXaSfZJJs9Z/+qzdk9
+      u+dYm8SOV3FLJJmSKEqkxA4CRO9t0AbADKb3V+7+AJEWJXIADGYwwOB+fiIJzH1fzrvfW75V
+      SCklCsUBRSu1AApFKTEe/UFKieM4pZRFodh1jK/+JRKJFO1BsViM2traoo2vUOTDYwUQQtDY
+      2Fi0BzmOU9TxFYp8UHcAxYFGKYBi10imTRxnbxkdlQIodoVwPM07H/Zxa2i+1KI8gVIARVGR
+      UrLoj/Kzq4PYtqRvcpVwPF1qsR6jFEBRNKSUTC+F+O3NMRwp0TSBRHJraIG94n9VCqAoClJK
+      huf8/PbmGEjQhABA1zTGvAFWgvESS7iBUgBFwbFth5uD83zcPU2F20B8Ofkf4TZ0Pu+fx9kD
+      u4BSAEVBsWyHa72zPBjz4XF9c/IDaJpgYS3C3Eq4BBJ+TZZSC6AoH6SU3OjzMjy7htul5/zd
+      So+L6w/nMC17l6R7OkoBFAUjlswyNLuGy8g9+R8RjqUZmvUXWarcKAVQFAQpJQ8nVwCeeux5
+      Gm6Xzr2RRVIZq5ii5UQpgKIgJNImw3NrGPrWp5QQgoxp0z22VETJcpO3Ajh2loW5GUKxFJlk
+      FO/8Mrbj4F/zIyXEwgHi6dJptmJ3GZpdw7S2H06va4IHY8vEktkiSLU5eStAKhYBVwWz0zNM
+      TExipcJ4l9d52HOPlGkyNnCfpbVEIWVV7FEypk3/1Oq2Vv9HCCFwGTqf98+VxDlmbP4rT6eq
+      vpFAYIqOo8eIBJbo6mxnei1GZ2sdC/NLuOubEIBt24+TbUzTLKDoir1C34SPeCqDy8j/RD3q
+      9fPCyVbaGqsLKNnm5K0AKzMjzAeydLhiOKkovUNh2rvOYTYcZtU7QdeZUyQc0PUNi4Cmabhc
+      roIJrtgbWLbDw6m1Z9r8t4rHpfFgcoW/eONbBZRuc/JWgJZjZ6luyaAbbiqOtJDOWFRVVeA4
+      dRzrPIZu6Dgy/y9EsT8YnfOTylib2v03Q9MEC6tRookMddWeAkm3hefm+0HD5aGuro7qqgp0
+      w0V1dSVCCHRdx+V2o2l6XmdCxf7Bsh16J1d2PPkfYTsOw7NrBRlrq6gZqsibmeUQ69FkwcZz
+      GTqDM2vY9u4VZ1AKoMgLy3boHlvGvUWv71aJp7LM+EIFHTMXSgEUebHoj+IPJ3Z08X0abpdO
+      39TqrplElQIo8uLu8CK6VvjpI8RGpGgotjtZY0oBFNtmORBj0R9F04pj5XPpOr2TvqKM/XWU
+      Aii2TMa0mF4OcfXBDBXuvC3om6JpgomFdZLp4jtOi/e/UOx7Njz4ktVQgsHZNeZ8YRLpLC5d
+      L9rq/4hM1mZyKcgLp9qK+pwcCpDmzqe3SHxZx+X0xVc53nGoqMIo9g7rkST906tML4UIJ9JU
+      uA00IfC4dmfNdLt0BqZXee5k6+N84mKQ43/j5tIrF/jkaj9vvtZG70xQKUAZYNsOWcsmlbGI
+      p7LEkhlCsTSRRJpYMksonsY0bWzHQdc1NCGo8pQmhMUfTrDkj3K0tb5oz8ihABq19W0cbRVc
+      /WKEV3/450UTQlEcYskM3tUI69EUkfjGBE+ms2Qth6xpo2kCR0oEG9UaHh1rdF1D3wNefJeu
+      0z+1SmdLXcHNrY/IoQBJfvdv7xNzJEIzyGZSQE1RhFAUFiklM8shfndviqxpY+gauiaemESF
+      Cl8oJo8uwz969SSeIl26xbM7xEgs0+LRDzXdQN/BxScQCNDc3Jz35xVbw7Rs7gwvcn906akl
+      SfYblu3w2oUjfOdCZ1HGz7HPCQyXQSwUYHl5mXgy88RPkxE/d2/cJQ7MDHbzxe37+MNxPv3k
+      Y7K2ZPD+NaaWY0URWvF04qks79+eoGfcR6XHte8nP4ChawzOrJE1i1M9YpN9Jc21j65z4vwZ
+      3DVN1H/lBFRV38KJw2EcIByO4q5po6ayglqXYD0cJCMNPJajEmJ2CV8wzpV7U6QyFrousJ3S
+      lhspJOF4lrmVICfaC2+E2UQBdFxaFq/XS23rCTqann4HOPPiZUiFmPQu03jkMN6RUVoPN2Oh
+      EmKKjW07PBhf5vbwIi5dw2WUn2un0qPzcHKNM53NBd/VNvm2DLq6DjOxFKK67snJH19fZmpl
+      hYosdNYJ5tcSnL9wATNdS4WrmkMtDWTMioIKq3gSKSV3Rha5P7KE26WXxZHnWSwHYiwFYnS2
+      1BV03ByXYIAEv/3V57z9eidfjHn4Tz84m/eD1CW48CwFovzbZyNbLkS1n3EcSUdTDX/9gwsF
+      HTensTceNTnaqvHrjwd56aWugj5YsTMs2+GTBzMHJutO0wTe1QiBSOEScGATBUhEI1h4aG9r
+      Jp1MFfTBivyRUvJwwkcoli7rY8/X8bh0bhe4t0BOBWhoqUPqDbz+2nlCa9GCPfSgYTsOY/MB
+      vKuFqYYcjqe5P7Z0II4+X0UIwcxyqKC5AjkVYHakl88++5Srnz6g6UhTwR56kMiYFlfuTvHB
+      nUl+d2dqxyG+jpRc7/Ni26WvrV8KdE3j7shiwcbLqQDnXnqdrgaHxelp5nxqB9gOUkrmVyO8
+      c6Wf6eUQFW6DrGVzo9+b9xYupWRqMYh3JbwnYnVKgaYJppaCBKOFOZJv8i0KWjpP0thUhf01
+      T7Di2WRMi8/7vfzy+ghZy358UTX0jfZAS/78POSm5fDZw9kDc/F9JhJ6xpcLMtSmjrBXXn+L
+      ygqHZNZdkAeWM1JKwvE0792eIBhNPTWAy2VoXOud5R9+9Ny2JrKUktvDC6Qy1oE7+38dXdcY
+      8Qb47sWj1FTtbF7mfAMTD2/wj//j//DhlQ8YmV3f0YMOAoFIkp9e6SOayDxzkgohCEZT9Iwv
+      b+sotBZK0De5cuAn/yMEcHd0cccWoZwKcKjjNH/1Zz+ipf0ULz93dEcPKneklNweWsBtbO6R
+      dRka90aXiCa2dqy0bIdPH84VpQrDfkXTBMOzfpKZnRkVcnyjUR50zxNbmcTWk9x9MLejB5U7
+      qYzFoj+2Jbu8EAKB4NPeOWwndxU0KSXDs35Wg/Gi5+HuJx59zz3jvh3tAjkUoArdWmTBbuKV
+      423UNqhkmFzMr0XImFtvCKJpgtmVELO+Z/sG4qksnzyY4frDOXXxfQqGrjEwvUoilf8ukOMS
+      rPP2f/7rjYQYKXmlrfyiDAvJqDew7fO529C51jNLZ0vdE2VGsqZNz8QyD8Z8OFKi6+JAeXy3
+      g+1IBmdX+e7F/I7oOZaVNJ9/+B7/8x//N+//5l+40f+k2SkZ8XPv87skgLmxPm58fpO1cILP
+      rn1C1pYMdX/GtO9gJMSkMuZGoahtTlIhBKmMyd2RjcucZTuMeQO882Ef90aWEGJjlVOT/9kY
+      ukb32HLeMUI5lvVK3vrJjwn+0y+ornZjf62TX1V9C8c7wthAUrr57ssXmFlbp8aQrEeCpG0N
+      t3kwEmImFwKYpoWRR4cUTYPu0SVa6yvpnVxhJRjH7dLRNHCkAwfT4bstpIQP7ozzd29d3PYi
+      tMm5xsOf/+3fEAjFaW15diizbZqkUil03UXjkQ68I2O0dmwkxGhfWi40TcMow2QNgInFEC7D
+      IN+FutKj8f6dKSorXFS4VdLQthEQimW4O+rjzeePbeujm6ZE/vbn/w9PUxPnX36DM52Nj38S
+      X19m0uejIgun2xuZXAxy6eIFUokKPEYVDa2NpE3PE9t3OW7lybTJjC9EdcXOHDLVlcrRuBNc
+      hk7vuI+utnqObyN1ctMlOZmMo9XV4ThP7sU1TYd5483Dj//+auvGJaTC3UBDQwMAu9vurDSM
+      LwRw6co5tRdwGRof3Z/mv/3Rc1tekHIcWlPMz8X44x//OT/+yz+hSh1Gv4HjSEbmAvuixs5B
+      QAhBJmvx8f3pLX8mhwLE6O+ZYPTBQ/wxHyPDhQk+KieiyQxrIdULeS+h6xqzK2EeTm7NQZbT
+      ESYsH34zxYPPBug41VpAMcuD6aXQRlCKYk/hNnSuP/QSiGweMr1JUnzhKLekeCklP/9kiHB8
+      dzqZKLaHlJKaSjf/9Q+fy3lEVf71PAnF0vjD6vizVxFCEIql+fThbM7fUwqQJ9PLwbI065YT
+      bpfO8IyfmwPzzww6VAqQJ+Pz6zsqFqzYHSo8BvdGl7hydwrT+ma5SKUAeRBJZFgNFb5FqKI4
+      VLgNJpeCvPvZCLGvpfYqBciDUa9fhSfvM9yGzno0yc+uDrIajD/+d/UWt4ntOEwtBtXxZx+i
+      axqm7fDuZ8NMLgaRUioF2C7RxIbzSx1/9ieaEGiaxnu3xukeW1YKsB2klIzPr6vUxDLA7dL5
+      vN9bGAXwL05z+859/JEEE+PjOFKyOj+FP1petYTWoynujx68koTlyKMdvCAKEIlmePW1yzTV
+      VLDknSGeyeD1ThEKl4+X1JGSj7u3HmSl2B8UJEPF45bcv/k5HScu0Hm4kdmJGWqaNmKHyiUj
+      rHfSx3Igitull1X7oYOMI53CKEDWNBFC2zga1LUTXfTSfvoECVMrixZJkUSauyM+Ktzl0XhO
+      sYEmHBUMtxm24/DrG6P4gnFVmKrMSGVMZQXajMHpNRbWomrylym79lanl0JML4cK2t2j2ETi
+      6Y1yhyrjq2zZNQUwbZt/vznGjX7vU4OS9hpSSq71zmLZjjr3lzG7pgACgcdl0Dvh4xefDm+5
+      MGypGF9YZ2Y5dGAbURwUdv3telwGoViKdz7sY3JxfU8eiWLJDJ/2zj5RrlBRnpRkedM1DU0I
+      3rs1wWcP57Dt3BWSdxPTsrn6YAbTUkefg0DJljghBB63wcD0Kov+KK+c6+BsZ1NJwwxSGZP3
+      bk+wHIipcIcDwq75AW71jtPnfXqjPSklWctG1zS+dayZ50620t5Us+06jzvBH07wmy/GSGUs
+      Fet/QEhlzNLtAF9FiI0L8ka0ZYDhuTWa66u4dKKV813NVHqK50GWUjK9HOLKvSmQqMl/wCjI
+      DrAwOcTsSoSLL77MWN99Lr/+JtMDt6joeInjbRsFEnPtAE9DSolpOVR6DBpqKznT2ciZo01U
+      V7gKtjNIKekZ9/HFgBfD0Hd1x1GUnoLtAFFT47UXzzPrD6DbGYLRMLGUiZbZeseUryOE+DLw
+      TBKIJPGtx7jWM0NjXRUnDx/iTGcTrQ3VuPM8q2dNm+t9cwxOr1JRxB1GsbcpiAJI2yabzSI0
+      nZbD7XhHJ2hsaaaQth2XoeMydFIZk8GZtccdE2ur3FS4XdRXe6iucFFXXYHHrVNT6cbQNEzb
+      Jp21sR2HdNbCtBxMy2bWF8YfTqjJf8ApiAJ0NNUwPLvCpUsXScXd6ARoam8lZRa+5LcQAl2I
+      x7E58ZRJLJllNRTHcSSPDnQbPxYg5YYiyq+OsdGjS1l6FLtmBbrxYJTuqdBuPEqh2BIZ0/69
+      AkgpWV8vXjPsaDRGRVVV0cZXKLaN/MoRSAixrXh9Mx1jeHiMQ4dPUm2FmFwMcubCRYK+BU6f
+      O4d/fhL9UBct9Z7Hn9mP+QCK8ibvO4Btw9mLl5ianMXS4dXXLmM4NsPzs3Qc72J+fpZDoo3G
+      GqMsUiIV5UnedwArm2J2Zpa2rrNElyeYWw7Qfvw8MjJDwq7B486gV5/i7LF6YP9mhCkKg5Qb
+      5uzqCjdVFXvH8pa329O/MMn8SpBZ7wKZbBYhNDxuF576DpxkkKbmVlx5tA1VlCdroQS/+HSY
+      az0zeyoCWOUEK4rOejTJu5+OYDsOpu3w929for2xptRiAao2qKLIRBMZfnl95HFmnaFpfDEw
+      X2qxHqMUQFE0kmmTX90YJWs6j8tJappgcS3KnC9cYuk2UAqgKAobk3+EWCrzjVqqLkPj1tDC
+      N3pPlwKlAIqCk7VsPrg7STCWfmo5GSEEvvUY08vBEkj3JEoBFAXFsh2u3J1iORDLmVtR4Ta4
+      OTBf8gohSgEUBUNKyc2BeWaWQ5smFgkhCMXTDM/5d0m6p6MUQFEwYsksA9OrW/b/eFwGd4cX
+      SWfzzxvZKUoBFAVBSkn32DKOlNuqppHOWvRO+IooWW6UAigKQiSeYcTr33aOhaFrdI8tkcqU
+      Jk5MKYBix0gp6Z305VXfSQiBlHBvZKkkIRJKARQ7JprMMDSzlneGnaFrPJxaIVKCcpl5K0A8
+      uMyd27e53zfG5OADrl//HN96jI+ufEDGdnh46wrji1uvAqHYn0gpeTC2zE7WbiEEuiboHlsu
+      mFxbJe98gOqGDi6chbWEwExJXn/1FDNrYVpqPfjXAziuGoQjy6ZFkuLpxFIblh9dFztuHTXm
+      9XP5W+1U7WKhgrwVIB5cIZh2caarhYG+FWLxGJrupr79MAtjo7R3tmJCWbRIUjwdKSV9U4to
+      mlaQBiKmZTPji/LSmfYCSLc1dpARZuJbmCMaj3O66zCTiyEuXugklaiituoQdY11ZKzCV4VQ
+      7B0iiQzDs/6CVdMzdI2+SR8vnm7btcLEeSvAodZjfK/12OO/v9jQBoCrro66ujoAKnYonGLv
+      IqWkd8KH7ThoWmHKywghCMbSzK9F6WqrL8iYm6GsQIq8iH65+he6tpLHpdM7vrxrJlGlAIq8
+      eDC+4fUtNEII5lYiu9ZBSCmAYtvEkhkGZ/zoWnHO6bom6JtaLcrYXyeHAjiE1tcJBAIEAoGS
+      uaoVewcpJemsxef9XoSgaBdVXdcYmw/sSpBcjkuwyeRwD3d7Z7l0rp5M7WX+9I2TRRdIsfeQ
+      UhJNZuibXGF41k/GtIveOjaZMZlYWOf5U21FfU4OBfBw+c23CK//inAsw5HjeyOLX7F7WLbD
+      ynqcB+PLzPhC6JqGrold6Zvs0jX6p1a5dKL1GymVhSSHAmR4eKeX6tYjGFmLI83KqFnOOFJi
+      2w5Z0yaZMfGtx3k46SMYTaPrGx18dhMhBP5IgqVAlKOtxTOJ5vhf6TS3t2N+edOvqVROrf3O
+      ox4J6axFMm0RjqdYj6SIJDJEExlSWZNEysR2NkqYVLiNXVntn4VL1+mZ8NHZUle0+0YOBTA4
+      euIEjm1hOxJNV7X09xNSSoZm1xiZ2zBgJDMmybSJlBv9ESRQ4TL46rx61JUH9sa71jTB9FKI
+      RNos2gK8yb6W5lf/9K94mpo4//IbnOlsLIoQisJi2Q6f93vpn1p9YgUvZrPBYmHoGr0TPt58
+      oaso42/qB0gm45imuSdquCg2J521+N3dSfqmVkp6fCkUhq4x6g2QMYtjEt1EASp464++T019
+      E0faG574iXQsVpZ8WEB03cfg4DDheBrfsg8pIbK+QjSlfAe7STie5hfXhpj1hXf90lpMEqks
+      U0vF6S60iQIk6elf4JWztXxxd/qJn6QTUYK+NZLAqs/P4a4uqtw6wwM9JLMmEyO9+PzJogit
+      eBIpJYv+KP/6ySDRZKbseh27XTo94xuBd4Um5zJhWwathxw+uTnG5T/8yyd+VlnbSFP9Rksl
+      TdiMDvRz/OxFjrQeYt67gKe+GQEqIabISCmZWFjnas8smqYhBDtOTNmLBMJxphYCnDzcsPkv
+      b4OcCrAwPUky4yB0F5lUEvh9j69EaJXhiQlqHYNmw8CtC9KZLO5D7ax6p+g6e4qErRJiis2I
+      189HD+aocJf3d6u5NLrHVzjX1VrQcTfpD5Bhbmadrq5avIsZjnf9vr6/49iYpoXQdAwNLFvi
+      cm20Q5JSomkCKcVjL57qD1B4ApEkP786iKaJXUsgKSWZrMXf/PAiR1vrCjZmzh1g6N413n2v
+      j7NnO7j4vZ9w/Cs/0zQdj+f3Vgb3l3/86os4AO+kZNiOw7WeWYQ4GJMfNu4Cd4cXOdJ8vmDh
+      ETlvS5e+8zbPn2zASlsI1e5oTzEy52fJHy1qnMxeQwjB/FqEtXCiYGNuMqttNFc1NXUGq/PF
+      6yFc7li2w6g3wNxKYZpCROJprj/04nGXj6lzq7hdOrcGFwqWMbbJN1jB2z/5M6LhADVNnQV5
+      4EHCsh0mFta5O7JIOJ6m0uPiv//JCzsq++E4kqsPZpBI4OCs/o/QhGBhLcJqKFGQPmM5d4AV
+      7yC//LcrrPqm6R1c3PHDDgqW7TA2H+CfPx7gyr1JkmkTj8vANG2+6J/Pe/WSUjI2H2DBHy1I
+      GZL9iqYJ7o8sFWSsnDuAplfQ0dGMbTTx+sunCvLAcsZ2Nlb820OLhGIpKj2uJ8yTuq4xPLfG
+      uWNNHG8/tO3xkxmT631zuMrM0bVddE1j2hciFEvRUFu5o7FyfJNJ+oZWOdFoMjE5RO/o7uRo
+      7md6xn18cGeSVMZ8ZuCZ29D5tGd227EtjiO5/nAOy95e+fFyxdA07o/uvKBuDgXQCC2Pc2sq
+      yV/+6FXSJShcup+wHYfJxSCVHlfOCSqEIJbMcn+b1ZDnVsJMLAaLloi+39A0wchcgFgyu6Nx
+      cjrCHMdGouGYKTCq2ElwYbk7wlZDCf7l4wEqtmiZyZgW//Cj52hr2Pwil0yb/OzqIBnTUqv/
+      V3Ach4snWnnr5RN5j5HzMKlpFvOzPgzDYnEhkPdDDgIT84Ftrc5uQ+fj7plNm8RlTZsb/XMk
+      M6aa/F9D0zRG5vw7qiGUUwGG7l3jpz99h5/9/FdEStfGac9jOw5jC+vbqpImhCAQTvJg/Ont
+      gUzLZmh2jXc+7GNiIVh2EZ6FwrIlDydX8v58zv360nd+wGqknrd+9L28H3AQWAsliSez205A
+      cbt0ukeXOHu0kaa6jUBDKSXLgRif9MwSjKZwu3Q1+XPgMjT6p1c4f7yZ1kPV2/78Jt+sQSYw
+      wc/e/TUTC082Nc4kwvQ/6CcFrM5PcvtuN9Fklp7ubixHMjvaw2Kg/PMBpJSMev3oen7HEyEE
+      H92fRkrJSjDOb2+O87NPBoklM2WR0bUbCCH4j5vjebVo2uTGZnDkRBemLwJfqwBseKpprqnA
+      BPyxDC9+q4vFVT/paJBIIk4gFKK+2nwcHSrlRrOMckMCk4vrG4nmeZjkhADfepx/vTbESjCO
+      oWuPPcWl6Jm1HxFslGu81jvLWy8f35Z/fBMFSDIyOE1zZyu+pTDnOn/vvNEN1+OtWSDQhIZE
+      0nakhbmxKeqbWgAeT/5yxR9OEElkqHQbX4YnbB+3oRGIJB87uMr5+yoWhq4xOLPKsda6bRVv
+      2DQW6Nvff5OVxQma25+MwY6vLzM6N0dVFo5W6TwYmeHS8y+QjhlYWR8t7R2ksi60L132QojH
+      yTHlxPBsgEqPC01ZaEpOhVvjk55Z2ptqOVSztUJuOf0AM8Nf8Ov3B7h0qYXK1st8/9vH8xau
+      HP0ApmXzzof9ZM3yO9rtV2zHobm+ir9769KWQsVzXoLrmo/yg+9/h4aWU1x+qTh1WfYza+Ek
+      MeUh31PomsZaKEH32NY87TkUIMb97nm0+AL+0BJ3e+cLKGZ5MDrnx1CJQnsOQ9e4NbSALxjf
+      9HdzvL0K7MQcY7EqfvDCSTxVngKKuP9JZy1G5wMHOix5ryKEwG3ovH9rgkQ6d6xQzjuAlA4S
+      gbQthO5iJ3FY5XYHmFxc5/3bk8pWv4exbIcTHYf48XfPPjNMJefyJYSGJgS6sbPJX46Mza8r
+      D+0ex9A1ZpZDXO2efmZpT/UG88C0bGaWQwcqIX2/4jJ0Rr0B3rs9QeYpLZeUAuTBjC9clDJ9
+      iuLgdunMrYT51eej37gTKAXYJlJKxrx+3AXuj6soLoa+4W3/xbWNIs6PUAqwTTKmzcJaVMXm
+      70N0TSOZNvn51UFWvjSRKgXYJnMrYeX53cdomsCRknc/G2ZmObRZLJDiq2Qtm/ujS8r0uc8R
+      QqAB/35zvDA7QHDFy9273QSiSbxzczgS1lfmCSV2lrC81+ibXCEYTanjTxkghMB2nAIpQDDO
+      S5dfpbHKw/T4CIlMhunJYfzrqUIMvycIRlPcG1lStv8yoyBHIEOz6b59i6OnLnCk/RDeGS9V
+      DRv5AOXQIGOjHOEUtmNv2P5VuH5Z4EinMApgSwchJbbj4K5rJzQ/Q9fZU8Qtse8bZGyUI1xn
+      0R/fcskTxf5AE85mDTIKx36NBUqks/zzRwPYqktm2ZHKmLtnBt2PnlMpJV/0z5NRZs+yZdcU
+      YGIhyK3Beaw8MvdLxdxKhFFvQF18y5hde7OaEHSPLfObL8ZIpPa+edSyHa4+mMalEl7Kml19
+      uy5DZ2U9zk+v9DG/Gtmz1Q+klNwaXCCZVuUIy51dX94ehRD/8sYId4YX9+SRaC2U4OGkTx19
+      DgAlecNCCDwug7sji/zqxiipjLlndoNEKsv7dybQNU2t/geAki5xHpfBajDO//qPHm4OLhCI
+      lK6U4qPShP/0UT/JtKWSXQ4IJffs6LqGJiW9Ez4ejC3T2VLLc6faONnRsGtBZ44jmVhY58P7
+      Uxi6pib/AaIgCuA4Npbl4HIZ2JaNbhg4tgWavqWa+UIIDF2AvtFoYuHOJLVVbs50NvHy2Q5q
+      Kt1Fm5S27XB7eIHusWU8rpKvB4pdpiBvfHygh2A8y7Ezlxi4f4O3//QnDN66Qs2JNzl/rH5b
+      Ywkh8LgNspZD//QqvRM+muqr6Gyp5UxnE22N1QWbqOmsxfu3J1jwR9XkP6AU5q1X1PGdM+1M
+      r8Y42lyHb3UFvaaRnR5gDF3D0DViyQwjcxkGplfRhOBwcy1d7Yc4ebiBSo+BS9e3fVxajyR5
+      /84E4XhGpTceYAqiAFY6wfLqKoarEaO1A9/UGEe6jlCoooFCCIQAt7Yh7moowWIgxq2hBQxN
+      w21oGIZOpdvA4zaoqjCorfSgaYKsZZPKWJiWTSZrYVoOGcsmlTaxHalMnQecgijAmdMnWVyL
+      ceJIM5l0NU2HWqiqq8K0inOseFT56xGWI7GyFumnlL3IhbrsKh7PUCkl8fjmtRSfNUxbSwPJ
+      xMbndbebTNoCLGKxjQx8xzbR5f7MB1CUJx79K+HQUkqy2eLF6IRCIRoaGoo2/naxLAvD2DsX
+      XyVPboolz+MRhRB4PMUrgGsYRlHH3y66ru+pF6zkyU2x5DmwN8C99HJBybMZxVHmq9cAAANf
+      SURBVJLnwCqAQgG7HAox3HuHUMbglW+/SqVROgvMQPdNklRy6fkXqfGU0gdgMTk4DPVtHGtw
+      8aB/mNqW4zx/7liJ5MkydLeXujMX6SDAp4MrnDx5kjPH2kojjrSZGB5gNZjg7MXzzI0Po9e0
+      8fJz5wpWrXwXd4A0WkUbF0+1EFxP7N5jn0IkFudQQwuV7lI7wAxOnjmNLmz8wSCXXvoumhUt
+      oTxuzp47gZQOobUwFbXVNDce2vxjRUPjzMUXOdbeRDIe4MjpV2nwWGSswkUO76IC6Jhmhkw6
+      g17SsAOH5196jUpCLK7la/YtPLqAdCaNbe+NsPCao6d55VwXE2OjJZRCMj81Tt2RkzTVVJHN
+      pDFNi0I25dlFBXDRUCNZiQmaD22thWWxWF/x4o/rtDdVlVQOnCwjw8MszM7gqmvHNztKQ1tn
+      6eSxkwyMTjI/OU48mWBkaIzDx46XTh5pE4qEGBvoJa0dIh2cQa9rx60X7visyqIoDjTKCqQ4
+      0CgFUBxolAIoDjRKARQHGqUAe4TV8VvcG19j4uZv6JnfenEA33gPv3jvOhaS9979v/z7B1dY
+      C/kZGph75mf6B/qwMglmFpYLIPn+Zm8FfBxgHNuk+9ZVPNEJzlSf5//dHcCoaaOzycWlk4cZ
+      XIwxPdzLc6+9zbk2Nx9c+Qy7sgFPaJxEzXNfjmFRVddCcm2MX/+6B3fFH9P3cJDKpk48kXli
+      QtDecZKPP/oP9P/y94QSaUZuf0Y4m6GqpoGa1mPYvjHW0m7+6m//htr9V8x726gdYA/x0vfe
+      5o2XzxOcn+bIc29gR1bwh0MkYyFC0QR6/WGeP91JLOCj/ujzGGaIw13nePXbL2Bg8723/4LG
+      1CzzVh0XLryEFl/l+IvfI7O+QDJj8NrlC0SzLs6fP8+J1mqisQSWqObMiQ7OvfBtkqExBoaX
+      6TrainNA6gGrHWCPUN9+lpPUUXHoFRpqDuPtu8OFy39Aix5hdCHI+TOnsa2NjLemrgs0+G7R
+      eP47dDUYyJoqQMM3O0Sk6jivn7tE//o1qo5dZnWom0uv/ZDBj96ld7yVH/7BG3gHYixENS6d
+      O41zrJOqah1X9SGqnv8DLhxdZj4s8RyQmaEcYQeEeDRGVV2t2vK/xgHRc0VNXW2pRdiT/H8E
+      PTTtTmokNgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
